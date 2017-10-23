@@ -108,7 +108,7 @@ return [
     */
 
     'menu' => [
-        'Início',
+        'INÍCIO',
         [
             'text'        => 'Home',
             'url'         => '/home',
