@@ -108,44 +108,47 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
-        [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
+        'Início',
         [
             'text'        => 'Home',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
+            'url'         => '/home',
+            'icon'        => 'flag',
             'label_color' => 'success',
         ],
         'SISTEMA',
         [
-            'text'    => 'Multilevel',
+            'text'    => 'Usuarios',
             'icon'    => 'share',
             'submenu' => [
                 [
-                    'text'    => 'Usuarios',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Listas',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text' => 'Grupos',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text' => 'Permissões',
-                            'url'  => '#',
-                        ],
-                    ],
+                    'text' => 'Lista',
+                    'url' => '#',
                 ],
                 [
-                    'text' => 'Level One',
-                    'url'  => '#',
+                    'text' => 'Grupos',
+                    'url' => '#',
+                ],
+                [
+                    'text' => 'Permissões',
+                    'url' => '#',
+                ],
+            ],
+        ],
+        [
+            'text'    => 'Configurações',
+            'icon'    => 'share',
+            'submenu' => [
+                [
+                    'text' => 'Listas',
+                    'url' => '#',
+                ],
+                [
+                    'text' => 'Grupos',
+                    'url' => '#',
+                ],
+                [
+                    'text' => 'Permissões',
+                    'url' => '#',
                 ],
             ],
         ],
