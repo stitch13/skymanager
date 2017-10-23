@@ -115,52 +115,31 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Pages',
+            'text'        => 'Home',
             'url'         => 'admin/pages',
             'icon'        => 'file',
-            'label'       => 4,
             'label_color' => 'success',
         ],
-        'ACCOUNT SETTINGS',
-        [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
-            'icon' => 'user',
-        ],
-        [
-            'text' => 'Change Password',
-            'url'  => 'admin/settings',
-            'icon' => 'lock',
-        ],
+        'SISTEMA',
         [
             'text'    => 'Multilevel',
             'icon'    => 'share',
             'submenu' => [
                 [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'Level One',
+                    'text'    => 'Usuarios',
                     'url'     => '#',
                     'submenu' => [
                         [
-                            'text' => 'Level Two',
+                            'text' => 'Listas',
                             'url'  => '#',
                         ],
                         [
-                            'text'    => 'Level Two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                            ],
+                            'text' => 'Grupos',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Permissões',
+                            'url'  => '#',
                         ],
                     ],
                 ],
@@ -169,19 +148,6 @@ return [
                     'url'  => '#',
                 ],
             ],
-        ],
-        'LABELS',
-        [
-            'text'       => 'Important',
-            'icon_color' => 'red',
-        ],
-        [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
         ],
     ],
 
