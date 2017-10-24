@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        skymanager\Providers\AppServiceProvider::class,
+        skymanager\Providers\AuthServiceProvider::class,
+        // skymanager\Providers\BroadcastServiceProvider::class,
+        skymanager\Providers\EventServiceProvider::class,
+        skymanager\Providers\RouteServiceProvider::class,
 
     ],
 
