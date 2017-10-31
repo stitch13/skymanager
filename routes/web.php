@@ -22,3 +22,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//MENU SISTEMA
+Route::group(['prefix' => 'usuarios', 'middleware' => 'auth'], function () {
+    
+    //SUB-MENU GERENCIAR
+    Route::group(['prefix' => 'gerenciar'], function () { 
+        Route::get('/', 'Usuarios\Gerenciar\UsuariosGerenciar@listar');
+        Route::get('/editar/{id}', 'Usuarios\Gerenciar\UsuariosGerenciar@editar');
+    });
+});

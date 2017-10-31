@@ -121,8 +121,8 @@ return [
             'icon'    => 'share',
             'submenu' => [
                 [
-                    'text' => 'Lista',
-                    'url' => '#',
+                    'text' => 'Gerenciar',
+                    'url' => '/usuarios/gerenciar',
                 ],
                 [
                     'text' => 'Grupos',
